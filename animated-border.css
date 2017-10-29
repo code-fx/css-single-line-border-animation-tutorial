@@ -1,0 +1,73 @@
+a{
+  text-decoration: none;
+  background-color: Tomato;
+  color: #FFF;
+  padding: 20px;
+  display: inline-block;
+  font-family: arial,sans-serif;
+}
+
+.box{
+  padding: 10px;
+  background-color: DodgerBlue;
+}
+
+.animatedBorderTop, .animatedBorderBottom, .animatedBorderleft, .animatedBorderRight{
+    position: relative;
+}
+
+.animatedBorderTop:after{
+    content: '';
+    position: absolute;
+    border-bottom: 5px solid #000;
+    top: 0;
+    left: 0;
+    right: 100%;
+    transition: all 500ms;
+}
+
+.animatedBorderTop:hover:after{
+    right: 0;
+}
+
+.animatedBorderBottom:after{
+    content: '';
+    position: absolute;
+    border-bottom: 5px solid #000;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 500ms;
+}
+
+.animatedBorderBottom:hover:after{
+    right: 0;
+}
+
+.animatedBorderLeft:after{
+    content: '';
+    position: absolute;
+    border-left: 5px solid #000;
+    bottom: 0;
+    left: 0;
+    top: 100%;
+    transition: all 500ms;
+}
+
+.animatedBorderLeft:hover:after{
+    top: 0;
+}
+
+.animatedBorderRight:after{
+    content: '';
+    position: absolute;
+    border-left: 5px solid #000;
+    bottom: 0;
+    right: 0;
+    top: 100%;
+    transition: all 500ms;
+}
+
+.animatedBorderRight:hover:after{
+    top: 0;
+}
