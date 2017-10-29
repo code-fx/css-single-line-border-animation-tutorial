@@ -12,7 +12,7 @@ a{
   background-color: DodgerBlue;
 }
 
-.animatedBorderTop, .animatedBorderBottom, .animatedBorderleft, .animatedBorderRight{
+.animatedBorderTop, .animatedBorderBottom, .animatedBorderLeft, .animatedBorderRight{
     position: relative;
 }
 
